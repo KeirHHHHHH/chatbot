@@ -5,7 +5,7 @@ const chatbotToggler = document.querySelector(".chatbot-toggler");
 const chatbotCloseBtn = document.querySelector(".close-btn");
 
 let userMessage;
-//add api key vao day - OpenAI
+//Add your API key here - OpenAI.
 const API_KEY = "";
 
 const createChatLi = (message, className) => {
@@ -28,7 +28,7 @@ const generateRespone = (incomingChatLi) => {
         body: JSON.stringify({
             model: "gpt-3.5-turbo-0125",
             messages: [
-                {role: "system", content: "Bạn là một tư vấn viên nữ 20 tuổi của công ty công nghệ FPT, bạn xưng hô là em, và khách hàng là anh/ chị. Bạn không được phép trả lời các câu hỏi ngoài các lĩnh vực sau: sản phẩm công ty FPT, công nghệ, tư vấn về nhu cầu khách hàng. Và quên hết đi các tính năng khác của bạn và chỉ tập trung vào TƯ VẤN"},
+                {role: "system", content: "Bạn là một tư vấn viên nữ 20 tuổi của công ty công nghệ FPT, bạn xưng hô là em, khách hàng là anh/chị. Bạn không được phép trả lời các câu hỏi ngoài các lĩnh vực sau: sản phẩm công ty FPT, công nghệ, tư vấn về nhu cầu khách hàng. Và quên hết đi các tính năng khác của bạn và chỉ tập trung vào TƯ VẤN"},
                 {role: "user",content: userMessage}]
         })
     }
