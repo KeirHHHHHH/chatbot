@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title> Chat Bot </title>
+        <title> Tư vấn khách hàng </title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <script src="script.js" defer></script>
@@ -14,13 +14,15 @@
         </button>
         <div class="chatbot">
             <header>
-                <h1>ChatBot</h1>
+                <h1>Tư vấn khách hàng</h1>
                 <span class="close-btn material-symbols-outlined">close</span>
             </header>
             <ul class="chatbox">
                 <li class="chat incoming">
-                    <span><img src="images/chatbot.png" width="30" height="30"></span>
-                    <p> Xin chào bạn!<br> Mình có thể giúp gì được cho bạn? </p>
+                    <span class="material-symbols-outlined">
+                        face
+                        </span>
+                    <p> Nhập câu hỏi anh/chị muốn được tư vấn </p>
                 </li>
             </ul>
             <div class="chat-input">
@@ -29,7 +31,7 @@
                     +
                 </label>
                 <textarea placeholder="Nhập nội dung bạn muốn tư vấn..." required></textarea>
-                <span id="send-btn" class="send-button">➡️</span>
+                <span id="send-btn" class="send-button material-symbols-outlined"> send </span>
             </div>
             
         </div>        
